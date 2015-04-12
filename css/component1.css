@@ -21,7 +21,7 @@
 
 .ac-custom li {
 	margin: 0 auto;
-	padding: 2em 0;
+	padding: 0.5em 0;
 	position: relative;
 }
 
@@ -35,6 +35,7 @@
 	cursor: pointer;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
+	color: #fff;
 }
 
 .ac-custom input[type="checkbox"],
@@ -59,7 +60,7 @@
 
 .ac-custom label::before {
 	content: '';
-	border: 4px solid #fff;
+	border: 2px solid #fff;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 }
