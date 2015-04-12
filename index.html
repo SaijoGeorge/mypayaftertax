@@ -1,1 +1,132 @@
-Hello World
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Natural Language Form</title>
+		<meta name="description" content="Natural Language Form with custom text input and drop-down lists" />
+		<meta name="keywords" content="Natural Language UI, sentence form, text input, contenteditable, html5, css3, jquery" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/component1.css" />
+		<link rel="stylesheet" type="text/css" href="css/tabs.css" />
+	`   <script src="js/modernizr.custom.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    	
+	</head>
+	<body class="nl-blurred" >
+		<div class="container demo-1">
+			<header>
+				<h1>Pay Calculator<span>what do you get after tax</span></h1>	
+			</header>		
+			<div class="main clearfix">
+				<form id="nl-form" class="nl-form">
+					I earn <input type="text" value="" id="regularIncome" placeholder="$..." data-subline="For example: <em>5000</em> or <em>90000</em>"/> every 
+					<select id="incomeFrequency">
+						<option value="week">week</option>
+						<option value="fortnight">fortnight</option>
+						<option value="month">month</option>
+						<option value="year" selected>year</option>
+					</select> and this
+					<select id="superAnnuationExist">
+						<option value="includes">includes</option>
+						<option value="excludes" selected>excludes</option>
+					</select>
+					my superannuation for :
+					</form>
+					<form class="ac-custom ac-checkbox ac-boxfill" autocomplete="off">
+					<ul>
+						<li><input name="isResident" type="checkbox" id="isResident"><label for="isResident">Resident</label></li>
+						<li><input name="isHelpRepayment" type="checkbox" id="isHelpRepayment"><label for="isHelpRepayment">Help Repayment</label></li>
+						<li><input name="isSenior" type="checkbox" id="isSenior"><label for="isSenior">Senior</label></li>
+					</ul>
+					</form>
+					<form class="nl-form">
+					<div class="nl-submit-wrap">
+						<button class="nl-submit" type="button" id="taxSubmit">Show me the breakdown</button>
+					</div>
+					<div class="nl-overlay"></div>
+					</form>
+					<div class="clearfix nl-form" id="taxResult">
+					<div class="pc-tab">
+						<input checked="checked" id="tab1" type="radio" name="pct" />
+						<input id="tab2" type="radio" name="pct" />
+						<input id="tab3" type="radio" name="pct" />
+						<input id="tab4" type="radio" name="pct" />
+						<nav>
+							<ul>
+							<li class="tab1">
+								<label for="tab1">Weekly</label>
+							</li>
+							<li class="tab2">
+								<label for="tab2">Fortnightly</label>
+							</li>
+							<li class="tab3">
+								<label for="tab3">Monthly</label>
+							</li>
+							<li class="tab4">
+								<label for="tab4">Yearly</label>
+							</li>
+							</ul>
+						</nav>
+						<section>
+							<div class="tab1">
+							Your superannuation 1 is  <label class="nl-field-toggle" id="superAnnuation"></label> and have to pay total tax of <label class="nl-field-toggle" id="totalTax"></label> which includes:
+							<br/>Income tax of : <label class="nl-field-toggle" id="incomeTax"></label>
+							<br/>Medicare Levy of : <label class="nl-field-toggle" id="medicareLevy"></label>
+							<br/>Medicare Levy Surcharge of : <label class="nl-field-toggle" id="medicareLevySurcharge"></label>
+							<br/>Temporary Budget Repair Levy of : <label class="nl-field-toggle" id="temporaryBudgetRepairLevy"></label>
+							<br/>Help Repayment of : <label class="nl-field-toggle" id="helpRepayment"></label>
+							</ul>
+							</div>
+							<div class="tab2">
+							Your superannuation 2 is  <label class="nl-field-toggle" id="superAnnuation"></label> and have to pay total tax of <label class="nl-field-toggle" id="totalTax"></label> which includes:
+							<br/>Income tax of : <label class="nl-field-toggle" id="incomeTax"></label>
+							<br/>Medicare Levy of : <label class="nl-field-toggle" id="medicareLevy"></label>
+							<br/>Medicare Levy Surcharge of : <label class="nl-field-toggle" id="medicareLevySurcharge"></label>
+							<br/>Temporary Budget Repair Levy of : <label class="nl-field-toggle" id="temporaryBudgetRepairLevy"></label>
+							<br/>Help Repayment of : <label class="nl-field-toggle" id="helpRepayment"></label>
+							</div>
+							<div class="tab3">
+							Your superannuation 3 is  <label class="nl-field-toggle" id="superAnnuation"></label> and have to pay total tax of <label class="nl-field-toggle" id="totalTax"></label> which includes:
+							<br/>Income tax of : <label class="nl-field-toggle" id="incomeTax"></label>
+							<br/>Medicare Levy of : <label class="nl-field-toggle" id="medicareLevy"></label>
+							<br/>Medicare Levy Surcharge of : <label class="nl-field-toggle" id="medicareLevySurcharge"></label>
+							<br/>Temporary Budget Repair Levy of : <label class="nl-field-toggle" id="temporaryBudgetRepairLevy"></label>
+							<br/>Help Repayment of : <label class="nl-field-toggle" id="helpRepayment"></label>
+							</div>
+							<div class="tab4">
+							Your superannuation 4 is  <label class="nl-field-toggle" id="superAnnuation"></label> and have to pay total tax of <label class="nl-field-toggle" id="totalTax"></label> which includes:
+							<br/>Income tax of : <label class="nl-field-toggle" id="incomeTax"></label>
+							<br/>Medicare Levy of : <label class="nl-field-toggle" id="medicareLevy"></label>
+							<br/>Medicare Levy Surcharge of : <label class="nl-field-toggle" id="medicareLevySurcharge"></label>
+							<br/>Temporary Budget Repair Levy of : <label class="nl-field-toggle" id="temporaryBudgetRepairLevy"></label>
+							<br/>Help Repayment of : <label class="nl-field-toggle" id="helpRepayment"></label>
+							</div>
+						</section>
+						</div>
+					</div>
+			</div>
+		<!-- /container -->
+		</div>
+		
+	
+    <script src="js/TaxRuleDataService.js"></script>
+    <script src="js/TaxCalculationService.js"></script>
+    <script src="js/MainController.js"></script>
+					<!-- NLS Script -->
+	<script src="js/nlform.js"></script>
+	<script src="js/svgcheckbx.js"></script>
+	<script>var nlform = new NLForm( document.getElementById( 'nl-form' ) ); </script>
+	<script>$(document).ready(function(){
+	$('#taxSubmit').click(function(){
+		calculate();
+		});
+	});</script>
+	</body>
+</html>

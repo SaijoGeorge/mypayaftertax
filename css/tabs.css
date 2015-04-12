@@ -1,0 +1,48 @@
+.pc-tab > input,
+.pc-tab section > div {
+  display: none;
+}
+
+#tab1:checked ~ section .tab1,
+#tab2:checked ~ section .tab2,
+#tab3:checked ~ section .tab3,
+#tab4:checked ~ section .tab4  {
+  display: block;
+}
+
+/* Visual Styles */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.pc-tab {
+  width: 100%;
+  margin: 0 auto;
+}
+.pc-tab ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pc-tab ul li label {
+  float: left;
+  padding: 15px 25px;
+  border-bottom: 0;
+  font-size: 0.6em;
+}
+.pc-tab ul li label:hover {
+  background: #e2564d;
+}
+.pc-tab ul li:not(:last-child) label {
+  border-right-width: 0;
+}
+.pc-tab section {
+  clear: both;
+}
+.pc-tab section div {
+  width: 100%;
+  line-height: 1.5em;
+  letter-spacing: 0.3px;
+}
