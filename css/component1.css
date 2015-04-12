@@ -28,7 +28,7 @@
 .ac-custom label {
 	display: inline-block;
 	position: relative;
-	font-size: 2em;
+	font-size: 1.5em;
 	padding: 0 0 0 80px;
 	vertical-align: top;
 	color: rgba(0,0,0,0.2);
@@ -39,11 +39,11 @@
 
 .ac-custom input[type="checkbox"],
 .ac-custom label::before {
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 	top: 50%;
 	left: 0;
-	margin-top: -25px;
+	margin-top: -14px;
 	position: absolute;
 	cursor: pointer;
 }
