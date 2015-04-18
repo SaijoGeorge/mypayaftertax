@@ -28,13 +28,8 @@
 .ac-custom label {
 	display: inline-block;
 	position: relative;
-<<<<<<< HEAD
 	font-size: 2em;
 	padding: 0 0 0 80px;
-=======
-	font-size: 1.5em;
-	padding: 0 0 0 40px;
->>>>>>> origin/gh-pages
 	vertical-align: top;
 	color: rgba(0,0,0,0.2);
 	cursor: pointer;
