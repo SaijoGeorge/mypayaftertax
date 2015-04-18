@@ -7,7 +7,7 @@
 }
 
 .ac-custom {
-	padding: 0 0.5em;
+	padding: 0 3em;
 	max-width: 900px;
 	margin: 0 auto;
 }
@@ -21,30 +21,29 @@
 
 .ac-custom li {
 	margin: 0 auto;
-	padding: 0.5em 0;
+	padding: 2em 0;
 	position: relative;
 }
 
 .ac-custom label {
 	display: inline-block;
 	position: relative;
-	font-size: 1.5em;
+	font-size: 2em;
 	padding: 0 0 0 80px;
 	vertical-align: top;
 	color: rgba(0,0,0,0.2);
 	cursor: pointer;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
-	color: #fff;
 }
 
 .ac-custom input[type="checkbox"],
 .ac-custom label::before {
-	width: 30px;
-	height: 30px;
+	width: 50px;
+	height: 50px;
 	top: 50%;
 	left: 0;
-	margin-top: -14px;
+	margin-top: -25px;
 	position: absolute;
 	cursor: pointer;
 }
@@ -60,7 +59,7 @@
 
 .ac-custom label::before {
 	content: '';
-	border: 2px solid #fff;
+	border: 4px solid #fff;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 }
@@ -78,10 +77,10 @@
 
 .ac-custom svg {
 	position: absolute;
-	width: 20px;
-	height: 20px;
+	width: 40px;
+	height: 40px;
 	top: 50%;
-	margin-top: -8px;
+	margin-top: -20px;
 	left: 5px;
 	pointer-events: none;
 }

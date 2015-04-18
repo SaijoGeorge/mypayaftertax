@@ -79,7 +79,6 @@ var calculate;
 			/* Initialise the Tax*/
 			var incomeTax = 0;
 			var totalTax = 0;
-			var netIncome = 0;
 			var temporaryBudgetRepairLevy = 0;
 			var medicareLevy = 0;
 			var medicareLevySurcharge = 0;
@@ -112,46 +111,18 @@ var calculate;
 				helpRepaymentIncome=0;
 			}
 			
-			/* Yearly */
+			
 			$("#incomeTax").text(incomeTax.toFixed(2));
 			$("#temporaryBudgetRepairLevy").text(temporaryBudgetRepairLevy.toFixed(2));
 			$("#medicareLevy").text(medicareLevy.toFixed(2));
 			$("#medicareLevySurcharge").text(medicareLevySurcharge.toFixed(2));
 			$("#helpRepayment").text(helpRepaymentIncome.toFixed(2));
+			
 			/* Set the Results */
 			totalTax = incomeTax + temporaryBudgetRepairLevy + medicareLevy + medicareLevySurcharge + helpRepaymentIncome;
-			netIncome = regularIncome - totalTax;
+			
 			$("#totalTax").text(totalTax.toFixed(2));
 			$("#superAnnuation").text(superAnnuation.toFixed(2));
-			$("#netIncome").text(netIncome.toFixed(2));
-			
-			$("#incomeTaxMonthly").text((incomeTax/12).toFixed(2));
-			$("#temporaryBudgetRepairLevyMonthly").text((temporaryBudgetRepairLevy/12).toFixed(2));
-			$("#medicareLevyMonthly").text((medicareLevy/12).toFixed(2));
-			$("#medicareLevySurchargeMonthly").text((medicareLevySurcharge/12).toFixed(2));
-			$("#helpRepaymentMonthly").text((helpRepaymentIncome/12).toFixed(2));
-			$("#totalTaxMonthly").text((totalTax/12).toFixed(2));
-			$("#superAnnuationMonthly").text((superAnnuation/12).toFixed(2));
-			$("#netIncomeMonthly").text((netIncome/12).toFixed(2));
-			
-			$("#incomeTaxFortnightly").text((incomeTax/26).toFixed(2));
-			$("#temporaryBudgetRepairLevyFortnightly").text((temporaryBudgetRepairLevy/26).toFixed(2));
-			$("#medicareLevyFortnightly").text((medicareLevy/26).toFixed(2));
-			$("#medicareLevySurchargeFortnightly").text((medicareLevySurcharge/26).toFixed(2));
-			$("#helpRepaymentFortnightly").text((helpRepaymentIncome/26).toFixed(2));
-			$("#totalTaxFortnightly").text((totalTax/26).toFixed(2));
-			$("#superAnnuationFortnightly").text((superAnnuation/26).toFixed(2));
-			$("#netIncomeFortnightly").text((netIncome/26).toFixed(2));
-			
-			$("#incomeTaxWeekly").text((incomeTax/52).toFixed(2));
-			$("#temporaryBudgetRepairLevyWeekly").text((temporaryBudgetRepairLevy/52).toFixed(2));
-			$("#medicareLevyWeekly").text((medicareLevy/52).toFixed(2));
-			$("#medicareLevySurchargeWeekly").text((medicareLevySurcharge/52).toFixed(2));
-			$("#helpRepaymentWeekly").text((helpRepaymentIncome/52).toFixed(2));			
-			$("#totalTaxWeekly").text((totalTax/52).toFixed(2));
-			$("#superAnnuationWeekly").text((superAnnuation/52).toFixed(2));
-			$("#netIncomeWeekly").text((netIncome/52).toFixed(2));
-			
 			$("#taxResult").show();
 			
 		};

@@ -26,7 +26,7 @@
 			</header>		
 			<div class="main clearfix">
 				<form id="nl-form" class="nl-form">
-					I earn $<input type="text" value="" id="regularIncome" placeholder="5000" data-subline="For example: <em>5000</em> or <em>90000</em>"/> every 
+					I earn <input type="text" value="" id="regularIncome" placeholder="$..." data-subline="For example: <em>5000</em> or <em>90000</em>"/> every 
 					<select id="incomeFrequency">
 						<option value="week">week</option>
 						<option value="fortnight">fortnight</option>
@@ -37,13 +37,13 @@
 						<option value="includes">includes</option>
 						<option value="excludes" selected>excludes</option>
 					</select>
-					my superannuation.
+					my superannuation for :
 					</form>
 					<form class="ac-custom ac-checkbox ac-boxfill" autocomplete="off">
 					<ul>
-						<li><input name="isResident" type="checkbox" id="isResident"><label for="isResident">I am a resident</label></li>
-						<li><input name="isHelpRepayment" type="checkbox" id="isHelpRepayment"><label for="isHelpRepayment">I have help repayments</label></li>
-						<li><input name="isSenior" type="checkbox" id="isSenior"><label for="isSenior">I am a senior</label></li>
+						<li><input name="isResident" type="checkbox" id="isResident"><label for="isResident">Resident</label></li>
+						<li><input name="isHelpRepayment" type="checkbox" id="isHelpRepayment"><label for="isHelpRepayment">Help Repayment</label></li>
+						<li><input name="isSenior" type="checkbox" id="isSenior"><label for="isSenior">Senior</label></li>
 					</ul>
 					</form>
 					<form class="nl-form">
@@ -76,32 +76,32 @@
 						</nav>
 						<section>
 							<div class="tab1">
-							Your superannuation 1 is  <label class="nl-field-toggle" id="superAnnuation"></label> and have to pay total tax of <label class="nl-field-toggle" id="totalTax"></label> which includes:
-							<br/>Income tax of : <label class="nl-field-toggle" id="incomeTax"></label>
-							<br/>Medicare Levy of : <label class="nl-field-toggle" id="medicareLevy"></label>
-							<br/>Medicare Levy Surcharge of : <label class="nl-field-toggle" id="medicareLevySurcharge"></label>
-							<br/>Temporary Budget Repair Levy of : <label class="nl-field-toggle" id="temporaryBudgetRepairLevy"></label>
-							<br/>Help Repayment of : <label class="nl-field-toggle" id="helpRepayment"></label>
+							Your weekly superannuation is  <label class="nl-field-toggle" id="superAnnuationWeekly"></label> with net weekly income of <label class="nl-field-toggle" id="netIncomeWeekly"></label> after paying total tax of <label class="nl-field-toggle" id="totalTaxWeekly"></label> which includes:
+							<br/>Income tax of : <label class="nl-field-toggle" id="incomeTaxWeekly"></label>
+							<br/>Medicare Levy of : <label class="nl-field-toggle" id="medicareLevyWeekly"></label>
+							<br/>Medicare Levy Surcharge of : <label class="nl-field-toggle" id="medicareLevySurchargeWeekly"></label>
+							<br/>Temporary Budget Repair Levy of : <label class="nl-field-toggle" id="temporaryBudgetRepairLevyWeekly"></label>
+							<br/>Help Repayment of : <label class="nl-field-toggle" id="helpRepaymentWeekly"></label>
 							</ul>
 							</div>
 							<div class="tab2">
-							Your superannuation 2 is  <label class="nl-field-toggle" id="superAnnuation"></label> and have to pay total tax of <label class="nl-field-toggle" id="totalTax"></label> which includes:
-							<br/>Income tax of : <label class="nl-field-toggle" id="incomeTax"></label>
-							<br/>Medicare Levy of : <label class="nl-field-toggle" id="medicareLevy"></label>
-							<br/>Medicare Levy Surcharge of : <label class="nl-field-toggle" id="medicareLevySurcharge"></label>
-							<br/>Temporary Budget Repair Levy of : <label class="nl-field-toggle" id="temporaryBudgetRepairLevy"></label>
-							<br/>Help Repayment of : <label class="nl-field-toggle" id="helpRepayment"></label>
+							Your monthly superannuation is  <label class="nl-field-toggle" id="superAnnuationFortnightly"></label> with net fortnightly income of <label class="nl-field-toggle" id="netIncomeFortnightly"></label> after paying total tax of <label class="nl-field-toggle" id="totalTaxFortnightly"></label> which includes:
+							<br/>Income tax of : <label class="nl-field-toggle" id="incomeTaxFortnightly"></label>
+							<br/>Medicare Levy of : <label class="nl-field-toggle" id="medicareLevyFortnightly"></label>
+							<br/>Medicare Levy Surcharge of : <label class="nl-field-toggle" id="medicareLevySurchargeFortnightly"></label>
+							<br/>Temporary Budget Repair Levy of : <label class="nl-field-toggle" id="temporaryBudgetRepairLevyFortnightly"></label>
+							<br/>Help Repayment of : <label class="nl-field-toggle" id="helpRepaymentFortnightly"></label>
 							</div>
 							<div class="tab3">
-							Your superannuation 3 is  <label class="nl-field-toggle" id="superAnnuation"></label> and have to pay total tax of <label class="nl-field-toggle" id="totalTax"></label> which includes:
-							<br/>Income tax of : <label class="nl-field-toggle" id="incomeTax"></label>
-							<br/>Medicare Levy of : <label class="nl-field-toggle" id="medicareLevy"></label>
-							<br/>Medicare Levy Surcharge of : <label class="nl-field-toggle" id="medicareLevySurcharge"></label>
-							<br/>Temporary Budget Repair Levy of : <label class="nl-field-toggle" id="temporaryBudgetRepairLevy"></label>
-							<br/>Help Repayment of : <label class="nl-field-toggle" id="helpRepayment"></label>
+							Your fortnightly superannuation is  <label class="nl-field-toggle" id="superAnnuationMonthly"></label> with net monthly income of <label class="nl-field-toggle" id="netIncomeMonthly"></label> after paying total tax of <label class="nl-field-toggle" id="totalTaxMonthly"></label> which includes:
+							<br/>Income tax of : <label class="nl-field-toggle" id="incomeTaxMonthly"></label>
+							<br/>Medicare Levy of : <label class="nl-field-toggle" id="medicareLevyMonthly"></label>
+							<br/>Medicare Levy Surcharge of : <label class="nl-field-toggle" id="medicareLevySurchargeMonthly"></label>
+							<br/>Temporary Budget Repair Levy of : <label class="nl-field-toggle" id="temporaryBudgetRepairLevyMonthly"></label>
+							<br/>Help Repayment of : <label class="nl-field-toggle" id="helpRepaymentMonthly"></label>
 							</div>
 							<div class="tab4">
-							Your superannuation 4 is  <label class="nl-field-toggle" id="superAnnuation"></label> and have to pay total tax of <label class="nl-field-toggle" id="totalTax"></label> which includes:
+							Your annual superannuation is  <label class="nl-field-toggle" id="superAnnuation"></label> with net annual income of <label class="nl-field-toggle" id="netIncome"></label> after paying total tax of <label class="nl-field-toggle" id="totalTax"></label> which includes:
 							<br/>Income tax of : <label class="nl-field-toggle" id="incomeTax"></label>
 							<br/>Medicare Levy of : <label class="nl-field-toggle" id="medicareLevy"></label>
 							<br/>Medicare Levy Surcharge of : <label class="nl-field-toggle" id="medicareLevySurcharge"></label>
