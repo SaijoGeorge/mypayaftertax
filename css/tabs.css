@@ -30,7 +30,7 @@
   float: left;
   padding: 15px 25px;
   border-bottom: 0;
-  font-size: 0.6em;
+  font-size: 0.3em;
 }
 .pc-tab ul li label:hover {
   background: #e2564d;
@@ -45,4 +45,8 @@
   width: 100%;
   line-height: 1.5em;
   letter-spacing: 0.3px;
+}
+
+.mainresult {
+  font-size: 0.6em;
 }
