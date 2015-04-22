@@ -9,7 +9,6 @@
 		<meta name="description" content="answers the all important question, what do you get after tax?" />
 		<meta name="author" content="Saijo and Sumesh" />
 		<link rel="canonical" href="https://mypayaftertax.com.au" />
-		<meta http-equiv="refresh" content="0;url=https://mypayaftertax.com.au">
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
@@ -18,6 +17,11 @@
 		<link rel="stylesheet" type="text/css" href="css/tabs.css" />
 		<script src="js/modernizr.custom.js"></script>
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript">
+   		var host = "mypayaftertax.com.au";
+			if ((host == window.location.host) && (window.location.protocol != "https:"))
+			window.location.protocol = "https";
+		</script>
 	</head>
 	<body class="nl-blurred" >
 		<div class="container demo-1">
