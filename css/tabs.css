@@ -32,6 +32,9 @@
   border-bottom: 0;
   font-size: 0.6em;
 }
+.tab-active{
+background: #e2564d;
+}
 .pc-tab ul li label:hover {
   background: #e2564d;
 }

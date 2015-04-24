@@ -65,16 +65,16 @@
 						<nav>
 							<ul>
 							<li class="tab1">
-								<label for="tab1">Weekly</label>
+								<label for="tab1" class="tab tab-active">Weekly</label>
 							</li>
-							<li class="tab2">
-								<label for="tab2">Fortnightly</label>
+							<li class="tab2" id="fortnightly-tab">
+								<label for="tab2" class="tab">Fortnightly</label>
 							</li>
-							<li class="tab3">
-								<label for="tab3">Monthly</label>
+							<li class="tab3" id="monthly-tab">
+								<label for="tab3" class="tab">Monthly</label>
 							</li>
-							<li class="tab4">
-								<label for="tab4">Yearly</label>
+							<li class="tab4" id="yearly-tab">
+								<label for="tab4" class="tab">Yearly</label>
 							</li>
 							</ul>
 						</nav>
@@ -139,6 +139,12 @@
 	$('#taxSubmit').click(function(){
 		calculate();
 		});
-	});</script>
+	$('.tab').click(function(){
+		$('.tab').removeClass('tab-active');
+		$(this).addClass('tab-active');
+		});
+	});
+	</script>
+	
 	</body>
 </html>
