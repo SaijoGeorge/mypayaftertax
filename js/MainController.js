@@ -10,7 +10,7 @@ var calculate;
 		var incomeFrequency = "year";
 		var isSenior = false;
 		var isHelpRepayment = false;
-		var isResident = true;
+		var isNonResident = false;
 		var noOfChildren = 0;
 		var superAnnuationPerc  = 9.5;
 		var superAnnuationExist = "excludes";
@@ -19,7 +19,7 @@ var calculate;
 		var individualType = "regular" 
 			
 		var calculateTax = function(){
-			console.log("called Once");
+			
 			/* Add Number of Children Logic*/
 			//
 			year = 2015;
@@ -34,7 +34,7 @@ var calculate;
 			individualType = "regular" // "senior"
 			isSenior = (typeof($("#isSenior").val())!="undefined")?$("#isSenior").is(':checked'):isSenior;
 			isHelpRepayment = (typeof($("#isHelpRepayment").val())!="undefined")?$("#isHelpRepayment").is(':checked'):isHelpRepayment;
-			isResident = (typeof($("#isResident").val())!="undefined")?$("#isResident").is(':checked'):isResident;
+			isNonResident = (typeof($("#isNonResident").val())!="undefined")?$("#isNonResident").is(':checked'):isNonResident;
 			noOfChildren = (typeof($("#noOfChildren").val())!="undefined")?$("#noOfChildren").val():noOfChildren;	
 			superAnnuationPerc = (typeof($("#superAnnuationPerc").val())!="undefined")?$("#superAnnuationPerc").val():superAnnuationPerc;
 			superAnnuationExist = (typeof($("#superAnnuationExist").val())!="undefined")?$("#superAnnuationExist").val():superAnnuationExist;
@@ -72,7 +72,7 @@ var calculate;
 			  individualType = "senior";
 			}
 			
-			if(!isResident){
+			if(isNonResident){
 			  residenceType = "nonresident";
 			}
 			
@@ -92,7 +92,7 @@ var calculate;
 			var temporaryBudgetRepairLevyDataSet = tax_rule_data_service.temporary_budget_repair_levy(year,residenceType);
 			temporaryBudgetRepairLevy = tax_calculation_service.calc_income_tax(temporaryBudgetRepairLevyDataSet, regularIncome);
 			
-			if(isResident){
+			if(!isNonResident){
 			  var medicareLevyDataSet = tax_rule_data_service.medicare_levy(year,incomeType, individualType);
 			  medicareLevy = tax_calculation_service.calc_income_tax(medicareLevyDataSet, familyIncome);
 			  
