@@ -141,7 +141,7 @@ a:active {
 }
 
 .social-buttons {
-  height: 50px;
+  height: 40px;
   margin: auto;
   font-size: 0;
   text-align: center;
@@ -154,9 +154,9 @@ a:active {
 .social-button {
   display: inline-block;
   background-color: #fff;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   margin: 0 5px;
   text-align: center;
   position: relative;
@@ -182,7 +182,7 @@ a:active {
           transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
 }
 .social-button .fa {
-  font-size: 40px;
+  font-size: 30px;
   vertical-align: middle;
   -webkit-transform: scale(0.8);
       -ms-transform: scale(0.8);
