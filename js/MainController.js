@@ -24,10 +24,7 @@ var calculate;
 			//
 			year = 2015;
 			regularIncome = (typeof($("#regularIncome").val())!="undefined")?$("#regularIncome").val():regularIncome;
-			console.log(regularIncome);
-			console.log(familyIncome);
 			familyIncome = (typeof($("#familyIncome").val())!="undefined")?$("#regularIncome").val():regularIncome;
-			console.log(familyIncome);
 			incomeFrequency = (typeof($("#incomeFrequency").val())!="undefined")?$("#incomeFrequency").val():incomeFrequency;
 			residenceType = "resident";
 			incomeType = "individual" // "family"
@@ -59,7 +56,6 @@ var calculate;
 			if(regularIncome != 0){
 			  superAnnuation =  (superAnnuationPerc/100)*regularIncome;
 			}
-			console.log(familyIncome);
 			familyIncome = Number(familyIncome) - (Number(noOfChildren)*3713);
 			if (familyIncome<=0){
 			familyIncome = 0;
@@ -103,8 +99,6 @@ var calculate;
 			  var helpRepaymentIncomeDataSet = tax_rule_data_service.help_repayment_income(year,"individual", "regular");
 			  helpRepaymentIncome = tax_calculation_service.calc_income_tax(helpRepaymentIncomeDataSet, regularIncome);
 			  }
-			  			  
-			  console.log(year+" : " + residenceType + " : " + incomeType + " : " + individualType + " : " + familyIncome + " : " + regularIncome);
 			}
 			else{
 				medicareLevy = 0;
@@ -156,39 +150,10 @@ var calculate;
 			
 		};
 		
-		/*var init = function(){
-			year = 2015;
-			regularIncome = 150000;
-			familyIncome = 150000;
-			incomeFrequency = "Annually";
-			isSenior = false;
-			isHelpRepayment = false;
-			isResident = true;
-			noOfChildren = 0;
-			superAnnuationPerc  = 9.5;
-			superAnnuationExist = "excludes";
-			
-			calculateTax();
-			
-		};
-		init();*/
-		
 		calculate = function(){
 			calculateTax();
 		};
 		
 		$("#taxResult").hide();
-		
-		/* To invoke the Calculation on Value Update */
-		/*
-		$scope.$watch( 'regularIncome',function(newValue, oldValue){calculateTax();});
-		$scope.$watch( 'familyIncome',function(newValue, oldValue){calculateTax();});
-		$scope.$watch( 'incomeFrequency',function(newValue, oldValue){calculateTax();});
-		$scope.$watch( 'superAnnuationPerc',function(newValue, oldValue){calculateTax();});
-		$scope.$watch( 'isResident',function(newValue, oldValue){calculateTax();});
-		$scope.$watch( 'isSenior',function(newValue, oldValue){calculateTax();});
-		$scope.$watch( 'isHelpRepayment',function(newValue, oldValue){calculateTax();});
-		$scope.$watch( 'noOfChildren',function(newValue, oldValue){calculateTax();});
-		$scope.$watch( 'superAnnuationExist',function(newValue, oldValue){calculateTax();}); */
 
 }());
