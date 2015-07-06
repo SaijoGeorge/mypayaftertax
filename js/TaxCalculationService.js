@@ -18,19 +18,12 @@ var taxCalculationService = function() {
                 for(var k=0; k<=index; k++){
                 if(itemArray[k].percent === 0){
                   income_tax = income_tax + 0;
-                  console.log(income_tax);
                 }
                 else if(k===index){
                   income_tax = income_tax + (income-(itemArray[k].from-1))*((itemArray[k].percent)/100);
-                  console.log(itemArray[k].from);
-                  console.log(itemArray[k].percent);
-                  console.log(income_tax);
                 }
                 else{
                   income_tax = income_tax + (itemArray[k].to-itemArray[k].from)*((itemArray[k].percent)/100);
-                  console.log(itemArray[k].from);
-                  console.log(itemArray[k].percent);
-                  console.log(income_tax);
                 }
                 } 
               }
